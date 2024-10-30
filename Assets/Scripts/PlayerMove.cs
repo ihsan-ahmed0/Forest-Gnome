@@ -46,6 +46,7 @@ public class PlayerMove : MonoBehaviour
         {
             states.TryGetValue(mode, out PlayerState state);
             playerState = state;
+            //anim.SetTrigger(mode);
         }
     }
 

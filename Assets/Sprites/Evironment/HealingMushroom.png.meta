@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HealingMushroom_0: -1558207956849242838
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
