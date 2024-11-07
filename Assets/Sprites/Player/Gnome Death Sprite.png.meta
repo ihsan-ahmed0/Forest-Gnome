@@ -597,7 +597,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gnome Death Sprite_0: 9067046126281323665
+      Gnome Death Sprite_1: -8020607609189598328
+      Gnome Death Sprite_10: -747843750104082284
+      Gnome Death Sprite_11: -3037409749534913069
+      Gnome Death Sprite_12: 5384240246293274099
+      Gnome Death Sprite_13: -3851141438630327194
+      Gnome Death Sprite_14: -5559314319549560831
+      Gnome Death Sprite_15: 330207035112208217
+      Gnome Death Sprite_16: -4491008663050992004
+      Gnome Death Sprite_17: 9144094602661774765
+      Gnome Death Sprite_18: -3256388482184878301
+      Gnome Death Sprite_2: -19765866605092667
+      Gnome Death Sprite_3: 2811300631060366962
+      Gnome Death Sprite_4: -5490012707225696928
+      Gnome Death Sprite_5: 4906885882899067563
+      Gnome Death Sprite_6: -7613721737935127054
+      Gnome Death Sprite_7: 2380983982095658534
+      Gnome Death Sprite_8: 3060000639432490244
+      Gnome Death Sprite_9: 8154585066728797575
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

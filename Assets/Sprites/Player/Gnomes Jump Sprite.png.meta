@@ -297,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gnomes Jump Sprite_0: -5831014247064623026
+      Gnomes Jump Sprite_1: -2720311231749345713
+      Gnomes Jump Sprite_2: -4544046006101740898
+      Gnomes Jump Sprite_3: 8677316389156043768
+      Gnomes Jump Sprite_4: -6328757353576191373
+      Gnomes Jump Sprite_5: 9050681973166631844
+      Gnomes Jump Sprite_6: -2976443690722387121
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

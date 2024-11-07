@@ -297,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gnome Run Sprite_0: -2241665323385538596
+      Gnome Run Sprite_1: 9079536084640732146
+      Gnome Run Sprite_2: -5416109291637196501
+      Gnome Run Sprite_3: -1188563223025018129
+      Gnome Run Sprite_4: -8554438065883060063
+      Gnome Run Sprite_5: 5611525651363135023
+      Gnome Run Sprite_6: 499128548583673580
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gnome Jump Image_0: -7956242350636774026
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

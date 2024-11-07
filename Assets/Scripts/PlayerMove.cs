@@ -61,15 +61,17 @@ public class PlayerMove : MonoBehaviour
 
     private void Movement()
     {
+        float sprintJumpMod = 1.5f;
+
         //Start Sprint
         if (Input.GetKeyDown(KeyCode.LeftShift)) {
             moveSpeed *= sprintMod;
-            jumpForce *= 1.2f; rb.linearDamping += 0.2f;
+            jumpForce *= sprintJumpMod; rb.linearDamping += 0.2f;
         }
         //End sprint
         if (Input.GetKeyUp(KeyCode.LeftShift)){
             moveSpeed /= sprintMod;
-            jumpForce /= 1.2f; rb.linearDamping -= 0.2f;
+            jumpForce /= sprintJumpMod; rb.linearDamping -= 0.2f;
         }
         //Left and right arrows, A, and D for movement controls
         xInput = Input.GetAxis("Horizontal");
