@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,9 +134,9 @@ TextureImporter:
       name: Gnome Run Sprite_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 192
-        width: 47
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: Gnome Run Sprite_1
       rect:
         serializedVersion: 2
-        x: 8
-        y: 64
-        width: 47
-        height: 128
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,9 +178,9 @@ TextureImporter:
       name: Gnome Run Sprite_2
       rect:
         serializedVersion: 2
-        x: 72
+        x: 128
         y: 192
-        width: 47
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -200,10 +200,10 @@ TextureImporter:
       name: Gnome Run Sprite_3
       rect:
         serializedVersion: 2
-        x: 72
-        y: 64
-        width: 47
-        height: 129
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,10 +222,10 @@ TextureImporter:
       name: Gnome Run Sprite_4
       rect:
         serializedVersion: 2
-        x: 138
-        y: 63
-        width: 45
-        height: 193
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,9 +244,9 @@ TextureImporter:
       name: Gnome Run Sprite_5
       rect:
         serializedVersion: 2
-        x: 10
-        y: 0
-        width: 45
+        x: 128
+        y: 128
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -266,10 +266,10 @@ TextureImporter:
       name: Gnome Run Sprite_6
       rect:
         serializedVersion: 2
-        x: 74
-        y: 0
-        width: 45
-        height: 65
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,11 +284,99 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Gnome Run Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2df3bbe932533f4bbc1e482512aa3ca
+      internalID: 1426290983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnome Run Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b58cbd85936baa4095ce4adfd8a58ad
+      internalID: 276097400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnome Run Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687f919ae266f134191f0e2535690341
+      internalID: 2128217582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnome Run Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25678b7859f3554da3399e2fede2889
+      internalID: 1961696048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 93eb360fe2678df46828809399522ec4
     internalID: 0
     vertices: []
     indices: 
@@ -300,11 +388,15 @@ TextureImporter:
     nameFileIdTable:
       Gnome Run Sprite_0: -2241665323385538596
       Gnome Run Sprite_1: 9079536084640732146
+      Gnome Run Sprite_10: 1961696048
       Gnome Run Sprite_2: -5416109291637196501
       Gnome Run Sprite_3: -1188563223025018129
       Gnome Run Sprite_4: -8554438065883060063
       Gnome Run Sprite_5: 5611525651363135023
       Gnome Run Sprite_6: 499128548583673580
+      Gnome Run Sprite_7: 1426290983
+      Gnome Run Sprite_8: 276097400
+      Gnome Run Sprite_9: 2128217582
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

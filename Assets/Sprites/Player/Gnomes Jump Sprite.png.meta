@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,10 +134,10 @@ TextureImporter:
       name: Gnomes Jump Sprite_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 191
-        width: 45
-        height: 65
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: Gnomes Jump Sprite_1
       rect:
         serializedVersion: 2
-        x: 74
-        y: 191
-        width: 45
-        height: 65
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +178,10 @@ TextureImporter:
       name: Gnomes Jump Sprite_2
       rect:
         serializedVersion: 2
-        x: 138
-        y: 191
-        width: 45
-        height: 63
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,10 +200,10 @@ TextureImporter:
       name: Gnomes Jump Sprite_3
       rect:
         serializedVersion: 2
-        x: 7
-        y: 0
-        width: 49
-        height: 128
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,10 +222,10 @@ TextureImporter:
       name: Gnomes Jump Sprite_4
       rect:
         serializedVersion: 2
-        x: 10
-        y: 127
-        width: 45
-        height: 63
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +244,10 @@ TextureImporter:
       name: Gnomes Jump Sprite_5
       rect:
         serializedVersion: 2
-        x: 71
-        y: 0
-        width: 49
-        height: 190
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,10 +266,10 @@ TextureImporter:
       name: Gnomes Jump Sprite_6
       rect:
         serializedVersion: 2
-        x: 135
-        y: 0
-        width: 49
-        height: 190
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,11 +284,121 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Gnomes Jump Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beadea06629b9341bd71d1c47ee0f64
+      internalID: 913777640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnomes Jump Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e531376f8f9024ba2c10833945ddf3
+      internalID: 536449725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnomes Jump Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059420d0d207eb942ba280fedc186412
+      internalID: 1128975970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnomes Jump Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf0a6d7fc3058644bd4620f1fa6ffd1
+      internalID: -384286528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnomes Jump Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08520796a17822242a2f3027197c7a8b
+      internalID: -806961631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6955216494cf0c8438d4ca105af391b7
     internalID: 0
     vertices: []
     indices: 
@@ -300,11 +410,16 @@ TextureImporter:
     nameFileIdTable:
       Gnomes Jump Sprite_0: -5831014247064623026
       Gnomes Jump Sprite_1: -2720311231749345713
+      Gnomes Jump Sprite_10: -384286528
+      Gnomes Jump Sprite_11: -806961631
       Gnomes Jump Sprite_2: -4544046006101740898
       Gnomes Jump Sprite_3: 8677316389156043768
       Gnomes Jump Sprite_4: -6328757353576191373
       Gnomes Jump Sprite_5: 9050681973166631844
       Gnomes Jump Sprite_6: -2976443690722387121
+      Gnomes Jump Sprite_7: 913777640
+      Gnomes Jump Sprite_8: 536449725
+      Gnomes Jump Sprite_9: 1128975970
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

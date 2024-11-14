@@ -91,7 +91,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -129,7 +129,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -170,10 +170,10 @@ TextureImporter:
       name: Gnome Death Sprite_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 201
-        width: 53
-        height: 183
+        x: 0
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: Gnome Death Sprite_1
       rect:
         serializedVersion: 2
-        x: 70
-        y: 202
-        width: 53
-        height: 182
+        x: 64
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +214,10 @@ TextureImporter:
       name: Gnome Death Sprite_2
       rect:
         serializedVersion: 2
-        x: 135
-        y: 203
-        width: 52
-        height: 181
+        x: 128
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: Gnome Death Sprite_3
       rect:
         serializedVersion: 2
-        x: 198
-        y: 219
-        width: 55
-        height: 165
+        x: 192
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +258,10 @@ TextureImporter:
       name: Gnome Death Sprite_4
       rect:
         serializedVersion: 2
-        x: 266
-        y: 255
-        width: 45
-        height: 129
+        x: 256
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +280,10 @@ TextureImporter:
       name: Gnome Death Sprite_5
       rect:
         serializedVersion: 2
-        x: 75
-        y: 223
-        width: 11
-        height: 11
+        x: 0
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: Gnome Death Sprite_6
       rect:
         serializedVersion: 2
-        x: 110
-        y: 226
-        width: 6
-        height: 7
+        x: 64
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,10 +324,10 @@ TextureImporter:
       name: Gnome Death Sprite_7
       rect:
         serializedVersion: 2
-        x: 266
-        y: 218
-        width: 45
-        height: 27
+        x: 128
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,10 +346,10 @@ TextureImporter:
       name: Gnome Death Sprite_8
       rect:
         serializedVersion: 2
-        x: 10
-        y: 127
-        width: 45
-        height: 27
+        x: 192
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,10 +368,10 @@ TextureImporter:
       name: Gnome Death Sprite_9
       rect:
         serializedVersion: 2
-        x: 74
-        y: 134
-        width: 45
-        height: 27
+        x: 256
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,10 +390,10 @@ TextureImporter:
       name: Gnome Death Sprite_10
       rect:
         serializedVersion: 2
-        x: 138
-        y: 127
-        width: 45
-        height: 27
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,10 +412,10 @@ TextureImporter:
       name: Gnome Death Sprite_11
       rect:
         serializedVersion: 2
-        x: 202
-        y: 129
-        width: 45
-        height: 27
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,10 +434,10 @@ TextureImporter:
       name: Gnome Death Sprite_12
       rect:
         serializedVersion: 2
-        x: 266
-        y: 127
-        width: 45
-        height: 27
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,10 +456,10 @@ TextureImporter:
       name: Gnome Death Sprite_13
       rect:
         serializedVersion: 2
-        x: 10
-        y: 64
-        width: 45
-        height: 27
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +478,10 @@ TextureImporter:
       name: Gnome Death Sprite_14
       rect:
         serializedVersion: 2
-        x: 74
-        y: 63
-        width: 45
-        height: 27
+        x: 256
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,10 +500,10 @@ TextureImporter:
       name: Gnome Death Sprite_15
       rect:
         serializedVersion: 2
-        x: 138
-        y: 63
-        width: 45
-        height: 27
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,10 +522,10 @@ TextureImporter:
       name: Gnome Death Sprite_16
       rect:
         serializedVersion: 2
-        x: 202
-        y: 63
-        width: 45
-        height: 27
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,10 +544,10 @@ TextureImporter:
       name: Gnome Death Sprite_17
       rect:
         serializedVersion: 2
-        x: 266
-        y: 63
-        width: 45
-        height: 27
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -566,10 +566,10 @@ TextureImporter:
       name: Gnome Death Sprite_18
       rect:
         serializedVersion: 2
-        x: 10
-        y: 0
-        width: 45
-        height: 26
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,11 +584,165 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Gnome Death Sprite_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49976ebef6c0f2419a45a899767d69f
+      internalID: -1139800053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnome Death Sprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ada5742e717e374e981b0385dc3cbab
+      internalID: 1601030140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnome Death Sprite_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b715bd21a158a240843e95e9096943f
+      internalID: -1674394955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnome Death Sprite_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30740be843bc54741a67f89e50fa16d1
+      internalID: -1017246373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnome Death Sprite_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7458a09785e4ae24fa1def956e46edce
+      internalID: 1360385102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnome Death Sprite_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9236c86c77f30d429f1d1c2f4f1a3a2
+      internalID: -1683942114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnome Death Sprite_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcf4209b1f60a24dac1a8ad284ae836
+      internalID: -1608210333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d2a21a276ab72cd498e5d2db5c4d32e7
     internalID: 0
     vertices: []
     indices: 
@@ -609,7 +763,14 @@ TextureImporter:
       Gnome Death Sprite_16: -4491008663050992004
       Gnome Death Sprite_17: 9144094602661774765
       Gnome Death Sprite_18: -3256388482184878301
+      Gnome Death Sprite_19: -1139800053
       Gnome Death Sprite_2: -19765866605092667
+      Gnome Death Sprite_20: 1601030140
+      Gnome Death Sprite_21: -1674394955
+      Gnome Death Sprite_22: -1017246373
+      Gnome Death Sprite_23: 1360385102
+      Gnome Death Sprite_24: -1683942114
+      Gnome Death Sprite_25: -1608210333
       Gnome Death Sprite_3: 2811300631060366962
       Gnome Death Sprite_4: -5490012707225696928
       Gnome Death Sprite_5: 4906885882899067563
