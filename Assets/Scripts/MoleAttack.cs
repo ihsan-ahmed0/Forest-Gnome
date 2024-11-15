@@ -50,7 +50,7 @@ public class MoleAttack : MonoBehaviour
     private void Attack(Transform player)
     {
         direction = (player.position - transform.position).normalized;
-        transform.Translate((direction * speed) * Time.deltaTime, Space.World);
+        rb.MovePosition((direction * speed) * Time.deltaTime);
     }
 }
 
