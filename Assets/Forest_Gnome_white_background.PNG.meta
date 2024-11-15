@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: c1cc70c1ad1a94680bb3fd0d3d8013bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5719405703944618089
+    second: Forest_Gnome_white_background_0
+  - first:
+      213: -1257182733183081729
+    second: Forest_Gnome_white_background_1
+  - first:
+      213: 4787288456060559015
+    second: Forest_Gnome_white_background_2
+  - first:
+      213: -3040357477178154460
+    second: Forest_Gnome_white_background_3
+  - first:
+      213: -5275430891360856662
+    second: Forest_Gnome_white_background_4
+  - first:
+      213: 972298401295551790
+    second: Forest_Gnome_white_background_5
+  - first:
+      213: -3002439025493886098
+    second: Forest_Gnome_white_background_6
+  - first:
+      213: -8875233348309509128
+    second: Forest_Gnome_white_background_7
+  - first:
+      213: 1137614364576769528
+    second: Forest_Gnome_white_background_8
+  - first:
+      213: 2048649458112902012
+    second: Forest_Gnome_white_background_9
+  - first:
+      213: -7987524750823136770
+    second: Forest_Gnome_white_background_10
+  - first:
+      213: -37468315801275922
+    second: Forest_Gnome_white_background_11
+  - first:
+      213: -5672088073021551701
+    second: Forest_Gnome_white_background_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Forest_Gnome_white_background_0
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 427
+        width: 128
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79fb902a0d690a0b0800000000000000
+      internalID: -5719405703944618089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Gnome_white_background_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 347
+        width: 58
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff22eda07f69d8ee0800000000000000
+      internalID: -1257182733183081729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Gnome_white_background_2
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 369
+        width: 118
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae51d49c7ddf6240800000000000000
+      internalID: 4787288456060559015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Gnome_white_background_3
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 473
+        width: 117
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422e796abfa7ec5d0800000000000000
+      internalID: -3040357477178154460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Gnome_white_background_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 330
+        width: 71
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa550530e87e9c6b0800000000000000
+      internalID: -5275430891360856662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Gnome_white_background_5
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 313
+        width: 285
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2dc6e89e3c4e7d00800000000000000
+      internalID: 972298401295551790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Gnome_white_background_6
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 337
+        width: 89
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6bbaa92d913556d0800000000000000
+      internalID: -3002439025493886098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Gnome_white_background_7
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 357
+        width: 67
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb9f4fea46d4d480800000000000000
+      internalID: -8875233348309509128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Gnome_white_background_8
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 252
+        width: 69
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5eafbbc3e99cf00800000000000000
+      internalID: 1137614364576769528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Gnome_white_background_9
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 158
+        width: 125
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73bd14f3d34e6c10800000000000000
+      internalID: 2048649458112902012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Gnome_white_background_10
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 182
+        width: 97
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1eb801f8c962190800000000000000
+      internalID: -7987524750823136770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Gnome_white_background_11
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 216
+        width: 71
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee1355ae3c2ea7ff0800000000000000
+      internalID: -37468315801275922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Gnome_white_background_12
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 225
+        width: 113
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab02d813f1b841b0800000000000000
+      internalID: -5672088073021551701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Forest_Gnome_white_background_0: -5719405703944618089
+      Forest_Gnome_white_background_1: -1257182733183081729
+      Forest_Gnome_white_background_10: -7987524750823136770
+      Forest_Gnome_white_background_11: -37468315801275922
+      Forest_Gnome_white_background_12: -5672088073021551701
+      Forest_Gnome_white_background_2: 4787288456060559015
+      Forest_Gnome_white_background_3: -3040357477178154460
+      Forest_Gnome_white_background_4: -5275430891360856662
+      Forest_Gnome_white_background_5: 972298401295551790
+      Forest_Gnome_white_background_6: -3002439025493886098
+      Forest_Gnome_white_background_7: -8875233348309509128
+      Forest_Gnome_white_background_8: 1137614364576769528
+      Forest_Gnome_white_background_9: 2048649458112902012
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
