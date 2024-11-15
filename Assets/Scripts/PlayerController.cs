@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator DamageTimer()
     {
-        float cooldown = 5f;
+        float cooldown = 2f;
         iFrame = true;
         while (cooldown > 0)
         {
