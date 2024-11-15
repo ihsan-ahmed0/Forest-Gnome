@@ -16,9 +16,10 @@ public class PlayerMove : MonoBehaviour
     public float jumpBuffer = 0.8f;
     private float jumpBufferTime;
     [Header("State Machine")]
-    [SerializeField]PlayerState playerState;
+    [SerializeField] PlayerState playerState;
     [SerializeField] List<string> stateNames;
     [SerializeField] List<PlayerState> stateTypes;
+    [SerializeField] Animator anim;
     Rigidbody2D rb;
     Dictionary<string,PlayerState> states;
     // Start is called before the first frame update
@@ -29,6 +30,11 @@ public class PlayerMove : MonoBehaviour
         jumpBufferTime += jumpBuffer;
         rb = GetComponent<Rigidbody2D>();
         rb.linearDamping = 0.5f; //makes player jump more steady
+
+        if (anim == null)
+        {
+            anim = GetComponent<Animator>();
+        }
     }
 
     // Update is called once per frame
@@ -46,7 +52,7 @@ public class PlayerMove : MonoBehaviour
         {
             states.TryGetValue(mode, out PlayerState state);
             playerState = state;
-            //anim.SetTrigger(mode);
+            anim.SetTrigger(mode);
         }
     }
 
@@ -61,15 +67,17 @@ public class PlayerMove : MonoBehaviour
 
     private void Movement()
     {
+        float sprintJumpMod = 1.5f;
+
         //Start Sprint
         if (Input.GetKeyDown(KeyCode.LeftShift)) {
             moveSpeed *= sprintMod;
-            jumpForce *= 1.2f; rb.linearDamping += 0.2f;
+            jumpForce *= sprintJumpMod; rb.linearDamping += 0.2f;
         }
         //End sprint
         if (Input.GetKeyUp(KeyCode.LeftShift)){
             moveSpeed /= sprintMod;
-            jumpForce /= 1.2f; rb.linearDamping -= 0.2f;
+            jumpForce /= sprintJumpMod; rb.linearDamping -= 0.2f;
         }
         //Left and right arrows, A, and D for movement controls
         xInput = Input.GetAxis("Horizontal");
@@ -83,7 +91,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && rb.linearVelocity.y == 0 && jumpBufferTime > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && playerState != PlayerState.Jumping)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             StateCheck("Jumping");
