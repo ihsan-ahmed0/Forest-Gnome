@@ -99,6 +99,13 @@ public class PlayerMove : MonoBehaviour
         //Left and right arrows, A, and D for movement controls
         xInput = Input.GetAxis("Horizontal");
 
+        // flip sprite to direction facing
+        if (xInput > 0) {
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        } else if (xInput < 0) {
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+
         rb.linearVelocity = new Vector2(xInput * moveSpeed, rb.linearVelocity.y);
         if (xInput !=0 && moveSpeed == baseSpeed && playerState != PlayerState.Jumping)
             StateCheck("Moving");
