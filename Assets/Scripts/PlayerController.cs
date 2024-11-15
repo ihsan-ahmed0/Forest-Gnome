@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using UnityEngine.Rendering;
 using UnityEngine.Windows;
 
@@ -20,11 +21,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float sprintJumpMod = 1.5f;
     public float jumpBuffer = 0.8f;
     private float jumpBufferTime;
+    public static PlayerController player;
 
     [Header("State Machine")]
     [SerializeField] PlayerState playerState;
 
-    private float playerHealth;
+    [SerializeField]private int playerHealth;
+    private bool iFrame = false;
 
     Rigidbody2D rb;
     Animator anim;
@@ -41,6 +44,7 @@ public class PlayerController : MonoBehaviour
         rb.linearDamping = 0.5f; // Steadier jumping.
         anim = GetComponent<Animator>(); // Get animator component.
         playerHealth = 100; // Set health to maximum.
+        player = this;
     }
 
     // Obtain the current horizontal direction being inputted by the player.
@@ -59,6 +63,14 @@ public class PlayerController : MonoBehaviour
             Vector3 scale = transform.localScale;
             scale.x *= -1;
             transform.localScale = scale;
+        }
+    }
+
+    public void Damage(int dmg) {
+        if (!iFrame)
+        {
+            playerHealth -= dmg;
+            StartCoroutine(DamageTimer());
         }
     }
 
@@ -119,6 +131,18 @@ public class PlayerController : MonoBehaviour
 
         rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
         Jump();
+    }
+
+    IEnumerator DamageTimer()
+    {
+        float cooldown = 5f;
+        iFrame = true;
+        while (cooldown > 0)
+        {
+            cooldown -= 1f;
+            yield return new WaitForSeconds(1f);
+        }
+        iFrame = false;
     }
 
     void Update()

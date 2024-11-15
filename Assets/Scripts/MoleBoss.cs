@@ -60,6 +60,7 @@ public class MoleBoss : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && state != MoleState.Burrow)
         {
             //do damage logic to player
+            PlayerController.player.Damage(15);
         }
 
         if (collision.gameObject.CompareTag("Finish")) {
