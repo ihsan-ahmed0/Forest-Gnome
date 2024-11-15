@@ -19,9 +19,10 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] PlayerState playerState;
     [SerializeField] List<string> stateNames;
     [SerializeField] List<PlayerState> stateTypes;
-    [SerializeField] Animator anim;
+    Animator anim;
     Rigidbody2D rb;
     Dictionary<string,PlayerState> states;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +53,23 @@ public class PlayerMove : MonoBehaviour
         {
             states.TryGetValue(mode, out PlayerState state);
             playerState = state;
-            anim.SetTrigger(mode);
+            //anim.SetTrigger(mode);
+            if (state == PlayerState.Idle)
+            {
+                anim.Play("Player_idle");
+            }
+            else if (state == PlayerState.Moving)
+            {
+                anim.Play("Player_run");
+            }
+            else if (state == PlayerState.Sprinting)
+            {
+                anim.Play("Player_sprint");
+            }
+            else if (state == PlayerState.Jumping)
+            {
+                anim.Play("Player_jump");
+            }
         }
     }
 
@@ -83,10 +100,10 @@ public class PlayerMove : MonoBehaviour
         xInput = Input.GetAxis("Horizontal");
 
         rb.linearVelocity = new Vector2(xInput * moveSpeed, rb.linearVelocity.y);
-        if (xInput !=0 && moveSpeed == baseSpeed && playerState != PlayerState.Jumping) 
+        if (xInput !=0 && moveSpeed == baseSpeed && playerState != PlayerState.Jumping)
             StateCheck("Moving");
         else if (xInput !=0 && moveSpeed != baseSpeed && playerState != PlayerState.Jumping)
-            StateCheck("Sprinting");  
+            StateCheck("Sprinting");
     }
 
     private void Jump()
