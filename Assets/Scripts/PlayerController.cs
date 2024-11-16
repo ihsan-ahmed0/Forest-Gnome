@@ -26,11 +26,13 @@ public class PlayerController : MonoBehaviour
     [Header("State Machine")]
     [SerializeField] PlayerState playerState;
 
-    [SerializeField]private int playerHealth;
+    [SerializeField] private int playerHealth;
     private bool iFrame = false;
 
     Rigidbody2D rb;
     Animator anim;
+
+    [SerializeField] PlayerSounds soundController;
 
     // Getter function for current player state;
     public PlayerState GetPlayerState() { return playerState; }
@@ -74,6 +76,34 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // If the player just landed on a surface, play the landing sound.
+    private void CheckIfLanded()
+    {
+        if (playerState == PlayerState.Jumping)
+        {
+            soundController.LandSound();
+        }
+    }
+
+    // Start playing walking sound if player started walking/sprinting. (currently unused)
+    private void CheckIfStartedMoving()
+    {
+        if (playerState != PlayerState.Moving && playerState != PlayerState.Sprinting)
+        {
+            Debug.Log("started moving");
+            soundController.WalkSound();
+        }
+    }
+
+    // Stop playing walking sound if player stopped walking/sprinting. (currently unused)
+    private void CheckIfStoppedMoving()
+    {
+        if (playerState == PlayerState.Moving && playerState == PlayerState.Sprinting)
+        {
+            soundController.StopWalkSound();
+        }
+    }
+
     // Check the curretn state of the player.
     private void StateChecker(float horizontalInput)
     {
@@ -89,16 +119,19 @@ public class PlayerController : MonoBehaviour
         }
         else if (horizontalInput == 0)
         {
+            CheckIfLanded();
             SetPlayerState(PlayerState.Idle);
             anim.Play("Player_idle");
         }
         else if (UnityEngine.Input.GetKeyDown(KeyCode.LeftShift))
         {
+            CheckIfLanded();
             SetPlayerState(PlayerState.Sprinting);
             anim.Play("Player_sprint");
         }
         else
         {
+            CheckIfLanded();
             SetPlayerState(PlayerState.Moving);
             anim.Play("Player_run");
         }
@@ -110,6 +143,7 @@ public class PlayerController : MonoBehaviour
         if (UnityEngine.Input.GetKeyDown(KeyCode.Space) && playerState != PlayerState.Jumping)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            soundController.JumpSound();
         }
     }
 

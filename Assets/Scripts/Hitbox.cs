@@ -10,7 +10,7 @@ public class Hitbox : MonoBehaviour
     GameObject mole;
     MoleAttack moleAttack;
     [Header ("Hitbox properties")]
-    public int health = 5;
+    public int health = 1;
     public int riccochet = 10;
     public int hitCount { get; private set; } = 0;
     public HitState state { get; private set; }
@@ -24,6 +24,11 @@ public class Hitbox : MonoBehaviour
         mole = transform.parent.gameObject;
         state = HitState.Alive;
         moleAttack = mole.GetComponent<MoleAttack>();
+
+        if (moleAttack == null)
+        {
+            Debug.Log("bruh");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

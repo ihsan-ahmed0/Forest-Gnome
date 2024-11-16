@@ -15,6 +15,8 @@ public class MoleAttack : MonoBehaviour
     [SerializeField] Hitbox hitbox;
     [SerializeField] MoleState state;
 
+    [SerializeField] MoleSounds soundController;
+
     void Start()
     {
         state = MoleState.Idle;
@@ -92,6 +94,7 @@ public class MoleAttack : MonoBehaviour
 
     internal void Death()
     {
+        soundController.HitSound();
         anim.Play("Death");
         hitbox.gameObject.SetActive(false);
         StartCoroutine(DeathTimer());
