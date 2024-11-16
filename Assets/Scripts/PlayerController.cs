@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.Rendering;
 using UnityEngine.Windows;
+using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -28,6 +30,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private int playerHealth;
     private bool iFrame = false;
+    private float deathTime;
 
     Rigidbody2D rb;
     Animator anim;
@@ -60,7 +63,7 @@ public class PlayerController : MonoBehaviour
     {
         bool facingRight = transform.localScale.x > 0;
         bool inputingRight = horizontalInput > 0;
-        if (playerState != PlayerState.Jumping && (facingRight != inputingRight) && (horizontalInput != 0))
+        if (playerState != PlayerState.Jumping && playerState != PlayerState.Death && (facingRight != inputingRight) && (horizontalInput != 0))
         {
             Vector3 scale = transform.localScale;
             scale.x *= -1;
@@ -68,11 +71,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Remove (or add) health from the player.
     public void Damage(int dmg) {
         if (!iFrame)
         {
             playerHealth -= dmg;
             StartCoroutine(DamageTimer());
+        }
+
+        // Prevent player's health from exceeding the maximum.
+        if (playerHealth > 100)
+        {
+            playerHealth = 100;
         }
     }
 
@@ -104,13 +114,27 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Check the curretn state of the player.
+    IEnumerator DeathScreenTimer()
+    {
+        deathTime = 4.5f;
+        while (deathTime > 0)
+        {
+            deathTime -= 0.1f;
+            yield return new WaitForSeconds(0.1f);
+        }
+        SceneManager.LoadScene("Death");
+    }
+
+    // Check the current state of the player.
     private void StateChecker(float horizontalInput)
     {
         if (playerHealth <= 0)
         {
             SetPlayerState(PlayerState.Death);
             anim.Play("Player_death");
+
+            // Start death screen timer.
+            StartCoroutine(DeathScreenTimer());
         }
         else if (rb.linearVelocity.y != 0)
         {
@@ -137,10 +161,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Checks if character should jump/
+    // Checks if character should jump
     private void Jump()
     {
-        if (UnityEngine.Input.GetKeyDown(KeyCode.Space) && playerState != PlayerState.Jumping)
+        if (UnityEngine.Input.GetKeyDown(KeyCode.Space) && playerState != PlayerState.Jumping && playerState != PlayerState.Death)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             soundController.JumpSound();
@@ -163,10 +187,19 @@ public class PlayerController : MonoBehaviour
             jumpForce /= sprintJumpMod; rb.linearDamping -= 0.2f;
         }
 
-        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        if (playerState != PlayerState.Death)
+        {
+            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        }
+        
         Jump();
     }
 
+    // Prevents player from being instantly killed by touching a mole.
     IEnumerator DamageTimer()
     {
         float cooldown = 2f;

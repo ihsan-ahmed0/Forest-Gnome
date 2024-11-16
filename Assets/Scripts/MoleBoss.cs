@@ -10,6 +10,7 @@ public class MoleBoss : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
     [SerializeField] Hitbox hitbox;
+    [SerializeField] GameObject star;
     public float speed = 1.2f;
     public float dodgeX = -50f; //must be negative
     public float dodgeCooldown = 5f;
@@ -118,6 +119,7 @@ public class MoleBoss : MonoBehaviour
             cooldown -= 1f;
             yield return new WaitForSeconds(1f);
         }
+        Instantiate(star, new Vector3(rb.position.x, rb.position.y + 5, 0), Quaternion.identity);
         Destroy(gameObject);
     }
     IEnumerator BurrowTimer()

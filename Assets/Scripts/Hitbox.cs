@@ -24,11 +24,6 @@ public class Hitbox : MonoBehaviour
         mole = transform.parent.gameObject;
         state = HitState.Alive;
         moleAttack = mole.GetComponent<MoleAttack>();
-
-        if (moleAttack == null)
-        {
-            Debug.Log("bruh");
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
