@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static PlayerController;
 using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
+using static UnityEngine.Rendering.DebugUI;
 
 public class MoleAttack : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class MoleAttack : MonoBehaviour
     Transform player;
     Animator anim;
     public float speed = 1.2f;
+    [SerializeField] Hitbox hitbox;
     [SerializeField] MoleState state;
 
     void Start()
@@ -46,7 +48,6 @@ public class MoleAttack : MonoBehaviour
         {
             state = MoleState.Hostile;
             StartCoroutine(AwakeTimer());
-            Debug.Log("chase");
             player = collision.transform;
         }
     }
@@ -87,6 +88,24 @@ public class MoleAttack : MonoBehaviour
         direction = (player.position - transform.position).normalized;
         transform.Translate((direction * speed) * Time.deltaTime,Space.World);
         Flip(direction.x);
+    }
+
+    internal void Death()
+    {
+        anim.Play("Death");
+        hitbox.gameObject.SetActive(false);
+        StartCoroutine(DeathTimer());
+    }
+
+    IEnumerator DeathTimer()
+    {
+        float cooldown = 1.35f;
+        while (cooldown > 0)
+        {
+            cooldown -= 0.01f;
+            yield return new WaitForSeconds(0.01f);
+        }
+        Destroy(gameObject);
     }
 }
 

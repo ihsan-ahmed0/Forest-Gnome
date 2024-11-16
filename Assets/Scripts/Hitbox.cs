@@ -8,6 +8,7 @@ public class Hitbox : MonoBehaviour
     Rigidbody2D rb;
     Vector3 direction;
     GameObject mole;
+    MoleAttack moleAttack;
     [Header ("Hitbox properties")]
     public int health = 5;
     public int riccochet = 10;
@@ -22,6 +23,7 @@ public class Hitbox : MonoBehaviour
         direction = Vector3.up;
         mole = transform.parent.gameObject;
         state = HitState.Alive;
+        moleAttack = mole.GetComponent<MoleAttack>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -44,9 +46,9 @@ public class Hitbox : MonoBehaviour
         if (hitCount >= health && mole.CompareTag("Boss")) {
             TriggerEvent();
         }
-        else if(hitCount >= health)
+        else if(hitCount >= health && moleAttack != null)
         {
-            Destroy(mole);
+            moleAttack.Death();
         }
     }
 
