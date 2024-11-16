@@ -17,6 +17,8 @@ public class MoleBoss : MonoBehaviour
     [SerializeField] bool canDodge;
     float currentCooldown;
 
+    private float collisionCooldown;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,11 +31,19 @@ public class MoleBoss : MonoBehaviour
         canDodge = true;
         currentCooldown = dodgeCooldown;
         state = MoleState.PhaseOne;
+        collisionCooldown = 0;
     }
 
     void Update()
     {
         Movement();
+    }
+    void FixedUpdate()
+    {
+        if (collisionCooldown > 0)
+        {
+            collisionCooldown -= Time.deltaTime;
+        }
     }
 
     private void Movement()
@@ -53,12 +63,12 @@ public class MoleBoss : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && state != MoleState.Burrow)
         {
-            //do damage logic to player
+            // do damage logic to player
             PlayerController.player.Damage(15);
         }
 
-        if (collision.gameObject.CompareTag("Finish")) {
-            Debug.Log("Hit");
+        if (collision.gameObject.CompareTag("Finish") && collisionCooldown <= 0) {
+            collisionCooldown = 3;
             isGoingRight = !isGoingRight;
             transform.Rotate(0, 180, 0);
         }
