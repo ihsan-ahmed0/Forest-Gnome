@@ -102,7 +102,7 @@ public class MoleAttack : MonoBehaviour
 
     IEnumerator DeathTimer()
     {
-        float cooldown = 1.35f;
+        float cooldown = 0.9f;
         while (cooldown > 0)
         {
             cooldown -= 0.01f;
