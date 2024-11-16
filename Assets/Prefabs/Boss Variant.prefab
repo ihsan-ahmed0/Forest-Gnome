@@ -37,6 +37,10 @@ PrefabInstance:
       value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1762033904980482951, guid: 31df05bc944fed743a250551a9744ccd, type: 3}
+      propertyPath: dodgeX
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762033904980482951, guid: 31df05bc944fed743a250551a9744ccd, type: 3}
       propertyPath: hitbox
       value: 
       objectReference: {fileID: 6317909636275378452}

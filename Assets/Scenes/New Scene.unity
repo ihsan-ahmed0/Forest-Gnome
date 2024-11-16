@@ -301,13 +301,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2662628088848644192, guid: 5bb8beafc1801624abdbc787dc714a5e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4189100322085491051, guid: 5bb8beafc1801624abdbc787dc714a5e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1463236436}
+    - targetCorrespondingSourceObject: {fileID: 4189100322085491051, guid: 5bb8beafc1801624abdbc787dc714a5e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1463236442}
   m_SourcePrefab: {fileID: 100100000, guid: 5bb8beafc1801624abdbc787dc714a5e, type: 3}
 --- !u!1 &991872140
 GameObject:
@@ -497,6 +501,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1463236442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463236430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e300e9b779559042b71effc672d61d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  sprintMod: 1.5
+  jumpForce: 10
+  sprintJumpMod: 1.5
+  jumpBuffer: 0.8
+  playerState: 0
+  playerHealth: 100
 --- !u!1001 &1697059313905023530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -505,9 +528,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 498265461102826530, guid: df670f55f0e2f5c4faa1e19a3ce5a92d, type: 3}
+      propertyPath: dodgeX
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 899920728451248655, guid: df670f55f0e2f5c4faa1e19a3ce5a92d, type: 3}
       propertyPath: m_Name
       value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106500476494166579, guid: df670f55f0e2f5c4faa1e19a3ce5a92d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8342320403947183998, guid: df670f55f0e2f5c4faa1e19a3ce5a92d, type: 3}
       propertyPath: m_LocalPosition.x

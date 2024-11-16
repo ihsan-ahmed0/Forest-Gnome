@@ -75,7 +75,7 @@ public class MoleBoss : MonoBehaviour
         float dodgeDirection = (player.position.x <= transform.position.x) ? -dodgeX : dodgeX;
         direction = new Vector3(transform.position.x + dodgeDirection, transform.position.y, transform.position.z);
 
-        transform.Translate((direction - transform.position) * speed * Time.deltaTime, Space.World);
+        rb.linearVelocity = direction * speed;
         canDodge = false;
         currentCooldown = dodgeCooldown;
     }
