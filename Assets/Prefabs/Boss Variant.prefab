@@ -52,6 +52,22 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4632296959431541584, guid: 31df05bc944fed743a250551a9744ccd, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2225728
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632296959431541584, guid: 31df05bc944fed743a250551a9744ccd, type: 3}
+      propertyPath: m_Size.y
+      value: 1.7567086
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632296959431541584, guid: 31df05bc944fed743a250551a9744ccd, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.11128643
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632296959431541584, guid: 31df05bc944fed743a250551a9744ccd, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.14165573
+      objectReference: {fileID: 0}
     - target: {fileID: 5274709238417528497, guid: 31df05bc944fed743a250551a9744ccd, type: 3}
       propertyPath: health
       value: 4

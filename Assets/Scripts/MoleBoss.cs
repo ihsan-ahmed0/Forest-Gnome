@@ -46,12 +46,6 @@ public class MoleBoss : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && canDodge)
-        {
-            player = collision.transform;
-            Dodge(player);
-            StartCoroutine(DodgeTimer());
-        }
         PhaseCheck();
     }
 
@@ -64,20 +58,10 @@ public class MoleBoss : MonoBehaviour
         }
 
         if (collision.gameObject.CompareTag("Finish")) {
+            Debug.Log("Hit");
             isGoingRight = !isGoingRight;
             transform.Rotate(0, 180, 0);
         }
-    }
-
-    private void Dodge(Transform player)
-    {
-        //Will dodge the left if the player is on the right and vice versa
-        float dodgeDirection = (player.position.x <= transform.position.x) ? -dodgeX : dodgeX;
-        direction = new Vector3(transform.position.x + dodgeDirection, transform.position.y, transform.position.z);
-
-        rb.linearVelocity = direction * speed;
-        canDodge = false;
-        currentCooldown = dodgeCooldown;
     }
 
     void PhaseCheck()
@@ -115,15 +99,7 @@ public class MoleBoss : MonoBehaviour
         GetComponent<CircleCollider2D>().enabled = false;
         StartCoroutine(BurrowTimer());
     }
-    IEnumerator DodgeTimer()
-    {
-        while (currentCooldown > 0)
-        {
-            currentCooldown -= 1f;
-            yield return new WaitForSeconds(1f);
-        }
-        canDodge = true;
-    }
+
     IEnumerator DeathTimer()
     {
         float cooldown = 3f;
