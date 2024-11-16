@@ -210,6 +210,7 @@ MonoBehaviour:
   speed: 1.2
   hitbox: {fileID: 8903457118827066299}
   state: 0
+  soundController: {fileID: -3205028063814021610}
 --- !u!95 &5628210811456053233
 Animator:
   serializedVersion: 7
@@ -245,7 +246,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: efc7ec92792a2854184040fe8d747c13, type: 3}
   m_Resource: {fileID: 8300000, guid: efc7ec92792a2854184040fe8d747c13, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.723
   m_Pitch: 1
   Loop: 0
   Mute: 0
