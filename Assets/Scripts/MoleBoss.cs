@@ -119,7 +119,7 @@ public class MoleBoss : MonoBehaviour
             cooldown -= 1f;
             yield return new WaitForSeconds(1f);
         }
-        Instantiate(star, new Vector3(rb.position.x, rb.position.y + 5, 0), Quaternion.identity);
+        Instantiate(star, new Vector3(rb.position.x, rb.position.y + 3, 0), Quaternion.identity);
         Destroy(gameObject);
     }
     IEnumerator BurrowTimer()

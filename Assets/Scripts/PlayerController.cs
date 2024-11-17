@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] PlayerState playerState;
 
     [SerializeField] private int playerHealth;
+    [SerializeField] private HealthUI healthUI;
     private bool iFrame = false;
     private float deathTime;
 
@@ -84,6 +85,9 @@ public class PlayerController : MonoBehaviour
         {
             playerHealth = 100;
         }
+
+        // Update health UI to reflect current health.
+        healthUI.ChangeHealthText(playerHealth);
     }
 
     // If the player just landed on a surface, play the landing sound.
